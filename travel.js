@@ -89,7 +89,7 @@ const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener('click', () => {
-  navbar.classList.toggle('active');
+    navbar.classList.toggle('active');
 });
 
 document.getElementById('explore-more-btn').addEventListener('click', function (e) {
