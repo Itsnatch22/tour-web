@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="icon" type="image/png" href="mountain.jpg">
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+    <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> Tours & <br><span>Travels</span></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </header>
+
+    <section class="booking" id="booking">
+        <div class="center-text">
+            <h2>Bookings</h2>
+            <p>To reserve your spot for an adventure, please fill out the form below with the required information.</p>
+        </div>
+    
+        <div class="booking-text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio illo magni enim ratione, vitae perspiciatis. Nulla dolorem, hic dolorum in reprehenderit dicta aspernatur beatae eveniet numquam maiores magnam nesciunt architecto!</p>
+        </div>
+    
+        <form action="" id="bookingForm">
+            <label for="tourName">Tour Name</label>
+            <select name="" id="tourName" required>
+                <option value="" disabled selected>Select a tour</option>
+                <option value="tour1">Adventure Tour</option>
+                <option value="tour2">City Sightseeing</option>
+                <option value="tour3">Nature Hike</option>
+            </select>
+            <br>
+            
+            <label for="date">Date:</label>
+            <input type="date" name="" id="date" required>
+            <br>
+    
+            <label for="numParticipants">Number of Participants:</label>
+            <input type="number" name="" id="numParticipants" required>
+            <br>
+    
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" required>
+            <br>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" required>
+            <br>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" name="" id="phone" required>
+            <br>
+    
+            <input type="submit" value="Book Now" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </form>
+        
+        <div id="confirmationMessage" style="display: none; color: green; margin-top: 10px;"></div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="center-text">
+            <h2>Reach Us</h2>
+        </div>
+        <div class="footer">
+            <h3 style="color: #fff;">Contact</h3>
+            <a href="https://wa.me/+254705683870">WhatsApp</a>
+            <a href="https://instagram.com/life.of.natch._">Instagram</a>
+            <a href="https://twitter.com/@natch7123">Twitter</a>
+            <a href="https://www.linkedin.com/in/">LinkedIn</a>
+        </div>
+        </div>
+
+        <div class="footer">
+            <h3 style="color: #fff;">Services and Help</h3>
+            <a href="#">Customer care</a><a href="#">FAQs</a>
+        </div>
+
+        <div class="footer">
+            <h3 style="color: #fff;">Our Company</h3>
+            <a href="#">Mission</a>
+            <a href="#">Vision</a>
+            <a href="#">Goals</a>
+        </div>
+
+    </section>
+
+    <div class="copyright" style="text-align: center;">
+        <p style="color: #fff; letter-spacing: 1; font-weight: 400; font-size: 10px;">&copy; Created by life.of.natch._ | All Rights Reserved. 2024</p>
+    </div>
+    <script src="travel.js"></script>
+</body>
+</html>

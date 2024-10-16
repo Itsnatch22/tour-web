@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #000;
+    --p-font: 1rem;
+    --text-color: #fff;
+    --h1-font: 7rem;
+    --h2-font: 4rem;
+    --main-color: #f66692;
+}
+
+body{
+    background: black;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 27px 17%;
+    z-index: 1000;
+    transition: all .5s ease;
+}
+
+header.sticky{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 8px 15%;
+    transition: all .5s ease;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+
+.logo span{
+    color: #fff000;
+}
+
+.navbar{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a{
+    color: white;
+    font-size: 24px;
+    margin: 16px 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: .5;
+}
+
+.navbar a:hover{
+    color: #ff8c00;
+}
+
+.navbar.active{
+    display: block;
+}
+
+section{
+    padding: 70px 17% 60px;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    display: none;
+    cursor: pointer;
+}
+
+.home{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text h5{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.home-text h1{
+    color: #fff;
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background: var(--main-color);
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid transparent;
+    margin-top: 16px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fffeee;
+    transform: translateX(5px);
+}
+
+.center-text h2{
+    margin-top: 6rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.center-text h2:hover{
+    color: var(--main-color);
+}
+
+.tour-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.tour{
+    margin-top: 6rem;
+}
+
+.tour-card{
+    width: 325px;
+    background-color: #808080;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(0 0 0 .2);
+    margin: 20px;
+    gap: 2rem;
+    filter: brightness(40%);
+    transition: all .3s cubic-bezier(.499,.05,.55,.95);
+    will-change: filter;
+}
+
+.tour-card:hover{
+    filter: brightness(100%);
+}
+
+.tour-card img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.card-content p{
+    color: #ffffff;
+    line-height: 1.2;
+    font-size: 16px;
+    margin-left: .5rem;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
+.contact{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a{
+    color: var(--main-color);
+    margin-bottom: .8rem;
+    transition: all .5s ease;
+}
+
+.footer a:hover{
+    transform: translateX(-5px);
+    filter: hue-rotate(360deg);
+}
+
+.about-us p{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.booking{
+    margin-top: 6rem;
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #808080;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+    color: #333; 
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    background: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s; 
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none; 
+}
+
+input[type="submit"] {
+    background-color: #007bff; 
+    color: white; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+
+.destination{
+    margin-top: 6rem;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    transform: rotateZ(23.5deg);
+    z-index: 1;
+}
+
+.earth {
+    position: absolute;
+    animation: animate 150s linear normal;
+    width: 10000px;
+    height: 1000px;
+    background-repeat: repeat-x;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -20px -20px 40px 10px black inset;
+}
+
+.continents {
+    animation: animate-2 43s linear 3.5;
+    width: 1000px;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-3500px);
+    }
+}
+
+@keyframes animate-2 {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-1000px);
+    }
+}
+
+.continent {
+    position: absolute;
+    transform: rotateZ(-23.5deg);
+}
+
+.one {
+    top: 100px;
+    left: 140px;
+}
+
+.two {
+    top: 260px;
+    left: 264px;
+}
+
+.three {
+    top: 80px;
+    left: 490px;
+}
+
+.four {
+    top: 200px;
+    left: 510px;
+}
+
+.five {
+    top: 100px;
+    left: 680px;
+}
+
+.six {
+    top: 290px;
+    left: 810px;
+}
+
+.continent a {
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Ensure visibility */
+    z-index: 10;
+    display: none;
+}
+
+.about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.explore-more {
+    margin-top: 6rem;
+    padding: 60px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.explore-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.explore-card {
+    background: #808080;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.explore-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.explore-card p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.explore-card:hover {
+    transform: scale(1.05);
+}
+
+.explore-more p{
+    color: #fff;
+}
+
+.tour-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tour-details img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+.tour-details p {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+ul li::before {
+    content: '';
+    margin-right: 8px;
+}
