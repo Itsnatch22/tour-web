@@ -24,6 +24,7 @@
 body{
     background: black;
     overflow-x: hidden;
+    margin: 0;
 }
 
 header{
@@ -487,4 +488,67 @@ ul li {
 ul li::before {
     content: '';
     margin-right: 8px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 10%;
+    }
+
+    .home-text h1 {
+        font-size: 5rem;
+    }
+
+    .home-text h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    section {
+        padding: 50px 10%;
+    }
+    
+    .tour-card {
+        max-width: 100%;
+    }
+
+    .explore-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .home-text h5 {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
 }
