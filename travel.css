@@ -516,7 +516,6 @@ ul li::before {
 
     .logo, #menu-icon {
         display: inline-block;
-        vertical-align: middle;
     }
 
     #menu-icon {
