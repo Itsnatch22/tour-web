@@ -544,6 +544,10 @@ ul li::before {
     .explore-container {
         grid-template-columns: 1fr;
     }
+
+    .circle{
+        overflow-x: hidden;
+     }
 }
 
 @media (max-width: 480px) {
