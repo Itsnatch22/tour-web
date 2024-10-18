@@ -297,7 +297,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .circle {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     height: 400px;
     overflow: hidden;
     border-radius: 50%;
