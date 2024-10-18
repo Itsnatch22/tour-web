@@ -92,12 +92,6 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-function toggleNavbar() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
-}
-
-
 document.getElementById('explore-more-btn').addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector('#explore-more').scrollIntoView({ behavior: 'smooth' });
