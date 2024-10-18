@@ -299,11 +299,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .circle {
     width: 80%;
     max-width: 400px;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
-    top: 100px;
+    top: 50px;
+    margin: 0 auto;
     transform: rotateZ(23.5deg);
     z-index: 1;
 }
@@ -390,10 +391,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .about {
     width: 90%;
     max-width: 600px;
-    height: 800px;
-    position: absolute;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
     top: 50px;
     left: 800px;
+    padding: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.8); /* Ensure visibility */
     z-index: 10;
@@ -548,10 +551,9 @@ ul li::before {
     }
 
     .circle {
-        width: 89%;  
-        max-width: 400px;
-        top: 30px;
-        height: 400px;
+        width: 90%;  
+        max-width: 300px;
+        top: 30px; 
     }
 
     .continent {
