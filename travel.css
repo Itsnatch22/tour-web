@@ -548,9 +548,10 @@ ul li::before {
     }
 
     .circle {
-        width: 75%;  
-        max-width: 390px;
+        width: 89%;  
+        max-width: 400px;
         top: 30px;
+        height: 400px;
     }
 
     .continent {
