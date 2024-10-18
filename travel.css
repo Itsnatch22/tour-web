@@ -505,7 +505,7 @@ ul li::before {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: flex-start;
         padding: 20px 5%;
     }
 
@@ -516,6 +516,7 @@ ul li::before {
 
     .logo, #menu-icon {
         display: inline-block;
+        vertical-align: middle;
     }
 
     #menu-icon {
