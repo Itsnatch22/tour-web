@@ -548,8 +548,8 @@ ul li::before {
     }
 
     .circle {
-        width: 90%;  
-        max-width: 300px;
+        width: 75%;  
+        max-width: 390px;
         top: 30px;
     }
 
