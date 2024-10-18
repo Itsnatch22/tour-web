@@ -26,7 +26,7 @@ submitBtn.addEventListener('click', (event) => {
     formObject[key] = value;
   });
 
-  fetch('https://your-server-endpoint', {
+  fetch('https://safari-omega.vercel.app/API/bookings', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
