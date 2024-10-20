@@ -85,12 +85,13 @@ link.forEach((el, index) => {
     });
 });
 
-const menuIcon = document.getElementById('menu-icon');
-const navbar = document.querySelector('.navbar');
+let menuIcon = document.getElementById('menu-icon');
+let navbar = document.querySelector('.navbar');
 
-menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-});
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+}
 
 document.getElementById('explore-more-btn').addEventListener('click', function (e) {
     e.preventDefault();
