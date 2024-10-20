@@ -85,7 +85,7 @@ link.forEach((el, index) => {
     });
 });
 
-let menuIcon = document.getElementById('menu-icon');
+let menuIcon = document.getElementById('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
