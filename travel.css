@@ -560,21 +560,6 @@ ul li::before {
     .explore-container {
         grid-template-columns: 1fr;
     }
-
-    .circle {
-        width: 90%;  
-        max-width: 300px;
-        top: 30px; 
-    }
-
-    .continent {
-        font-size: 14px;
-    }
-
-    .about {
-        width: 95%;
-        padding: 15px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -592,17 +577,5 @@ ul li::before {
 
     section {
         padding: 30px 5%;
-    }
-    
-    .circle {
-        max-width: 250px;
-    }
-
-    .continent a {
-        font-size: 12px;
-    }
-
-    .about {
-        padding: 10px;
     }
 }
